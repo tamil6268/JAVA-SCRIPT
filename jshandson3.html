@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jshandson3.css">
+</head>
+<body>
+    <h1 style="background-color:rgb(231, 200, 200);font-weight:bolder;font-size:60px;color: whitesmoke;text-align:center;text-decoration:underline;">JAVA SCRIPT</h1>
+    <div class="h2">( JS-HANDSON => 3 )</div>
+    <div class="q"> <b> 1.Find the number of digits:</b><br><br>
+      Take a number from the user and print the count of digits in that number.
+    <br>
+    <span style="color:red;">Note:</span>You have to complete Find_Digits. No need to take any input.</div> <br>
+       <pre class="ans"> const Find_Digits = (N) => 
+        {
+          var count=0;
+          if (N >= 1){ ++count;}
+        
+          while (N / 10 >= 1) {
+                 N /= 10;
+                ++count;
+              }
+              return count;
+        };</pre>
+    <hr>
+    <div class="q"><b>2.Find the Fives:</b>
+        <br><br>
+        Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number.
+        <br>
+        
+       <span style="color:red;">Note:</span> You have to complete Find_Five. No need to take any input.<br>
+       <pre class="ans">  const Find_Five = (N) => 
+        {
+          let a = 5, value = 0;
+                          
+                  while (N > 0){
+                    value = (N % 10 == a) ? value +1 : value;
+                            
+                     N = parseInt(N/10);
+                  }
+                return value;
+        };
+        
+      </pre>
+    <hr>
+    <div class="q"> <b> 3.Find Sum:</b> <br><br>
+      You are given an integer 
+      N
+      , and your task is to find the sum of all the even integers starting from 
+      1
+       upto 
+      N
+       (
+      N
+       inclusive).
+<br>
+        <span style="color:red;">Note:</span> You have to complete findSum function. No need to take any input.
+        <br>
+        
+        <br>
+       <pre class="ans"> const findSum = (n) => {
+        let sum=0;
+        for(let i=1; i<=n;i++){
+          if(i%2 === 0){
+            sum=sum+i;
+          }
+        }
+        return sum;
+    };
+    </pre>
+    <hr>
+    <div class="q"> <b> 4.Find the sum of the digits of a given number.</b><br><br>
+      Write a program that takes a number from the user and get the sum of the digits present in the number.
+        <br>
+        <span style="color:red;">Note:</span> You have to complete Number_Sum. No need to take any input.</div> <br>
+           <pre class="ans"> const Number_Sum = (N) => 
+            {
+              let sum = 0;
+                   while( N !==0){
+                      sum=sum + N %10;
+                        N = Math.floor(N/10);
+                      }
+                  return sum;
+            };
+            </pre>
+        <hr>
+    <div class="q"> <b> 5.Print the Odds:</b><br><br>
+      Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first. </div>
+        <br>
+        <span style="color:red;">Note:</span> You have to complete Print_Odd. No need to take any input.</div> <br>
+           <pre class="ans"> const Print_Odd = (N) => 
+            {
+              for(var i=2; i<=N; i++){ 
+                if(i==2 || i%2 !==0){
+                  console.log(i)
+                }
+              }
+            };
+            </pre>
+        <hr>
+    <div class="q"> <b> 6.Print the Pattern:</b><br><br>
+      Write a program which ask user for no of lines and print a pattern using an asterik .
+        <br> <br>
+        <span style="color:red;">Note:</span>   You have to complete Print_pattern. No need to take any input.</div> <br>
+           <pre class="ans">const Print_pattern = (N) => 
+            {
+               let add = "";
+                  for (let i = 1; i <= N; i++) {
+                      for (let j = 0; j < i; j++) {
+                          add += "*";
+                      }
+                        add += "\n";
+                  }
+                  console.log(add);
+            };</pre>
+        <hr>
+        <div class="q"> <b> 7.Check whether a Number is a prime or not.</b><br><br>
+          Write a program which takes  a number from user and check whether number is prime number or not a prime number.
+            <br>
+            <span style="color:red;">Note:</span> You have to complete Prime_Check. No need to take any input.
+        </b><pre></div> <br>
+               <pre class="ans">const Prime_Check = (N) => 
+                {
+                   let isPrime = true;
+                   let x = "YES";
+                   let y = "NO";
+                   
+                   if (N === 1){
+                     return y;
+                   }
+                   else if(N > 1)
+                     {for (i=2; i < N; i++)
+                     {if(N % i === 0)
+                     {isPrime=false;
+                         break;
+                       }
+                     }
+                   if (isPrime){
+                     return x;
+                   }  
+                   else{
+                     return y;
+                   }
+                   }
+                  
+                };</pre>
+            <hr>
+        <div class="q"> <b>8.Print Numbers:</b><br><br>
+          You are given an integer 
+          N
+          , and your task is to print all the integers starting from 
+          1
+           till 
+          N
+           (
+          N
+           inclusive).
+            <br>
+            <span style="color:red;">Note:</span>  You have to complete printNumbers function. No need to take any input.
+        </b><pre></div> 
+               <pre class="ans"> const printNumbers = (n) => {
+    
+                for(t = 1;  t <= n; t++){
+                    
+                    console.log(t);
+                    
+                    } 
+                            
+            };</pre>
+            <hr>
+        <div class="q"> <b>9.Print the Table:</b><br><br>
+          Write a program which takes a number from user and print the table.
+            <br>
+            <span style="color:red;">Note:</span> You have to complete Print_Table. No need to take any input.
+        </b><pre></div> 
+               <pre class="ans"> const Print_Table = (N) => 
+                {
+                
+                  for ( let i=1; i <= 10; i++){
+                    
+                     console.log(N + " * " + i + " = " + i * N );
+                    }
+                };</pre>
+            <hr>
+</body>
+</html>
