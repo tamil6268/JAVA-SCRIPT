@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+}
+b{
+    color:aqua;
+    
+}
+h2{
+    color:khaki;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 8px 8px 18px red,9px 12px 24px green, 8px 8px 18px red;
+
+}
+.h2{
+    color:antiquewhite;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.q{
+   font-size: xx-large;
+   color:blue;
+}
+.ans{
+    
+    font-size: xx-large;
+    color: green;
+}
