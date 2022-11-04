@@ -1,0 +1,32 @@
+*{
+    background-color: black;
+    user-select: none;
+}
+b{
+    color:aqua;
+    
+}
+.h1{
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 50px;
+}
+.h2{
+    color:khaki;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 8px 8px 18px red,9px 12px 24px green, 8px 8px 18px red;
+
+}
+
+.q{
+   font-size: xx-large;
+   color:blue;
+}
+.ans{
+    
+    font-size: xx-large;
+    color: green;
+}

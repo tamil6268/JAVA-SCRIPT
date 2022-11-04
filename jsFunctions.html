@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsFunctions.css">
+</head>
+<body>
+    <div class="h1">JAVA SCRIPT</div>
+    <br><br>
+    <div class="h2">FUNCTIONS</div>
+
+    <div class="q"> <b> 1.Create one function with zero parameter having a console statement; </b><br>
+    
+       <pre class="ans"> function vijay(){
+        console.log("HELLO AM \"VIJAY\"");
+      }
+      vijay();</pre>
+    <hr>
+
+
+    <div class="q"><b>2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</b>
+        <br><br>
+
+       <pre class="ans"> function sum(a,b){
+        const sum = a+b;
+        console.log(" sum of " + a +"," + b + " is " + sum);
+      }
+      sum(3,4);
+      </pre>
+    <hr>
+    <div class="q"> <b> 3.Create one arrow function</b> <br><br>
+        
+       <pre class="ans"> const arrowfunc = (A) => {
+        console.log(A);
+ };
+ arrowfunc("AM VIJAY");
+      </pre>
+    <hr>
+    <div class="q"> <b> 4.Print output:</b><br>
+        <span style="color:red;">Note:</span>
+    <pre>var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();</pre></div> <br>
+           <pre class="ans">Ans: undefined.
+         </pre>
+        <hr>
+    <div class="q"> <b> 5.Print output: </b><br>
+        <span style="color:red;">Note:</span> <pre>var x = 21;
+            girl ();
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            };</pre></div> <br>
+           <pre class="ans">
+           Ans: 21.
+         </pre>
+        <hr>
+    <div class="q"> <b> 6.Print Output:</b><br>
+        <br>
+        <span style="color:red;">Note:</span><pre>var x = 21;
+            a();
+            b();
+            
+              function a() {
+                
+               x = 20;
+              console.log(x);
+            };
+             function b() {
+                
+                x = 40;
+               console.log(x);
+            };</pre></div> <br>
+           <pre class="ans">
+           Ans: 20 and 40.
+         </pre>
+        <hr>
+        <div class="q"> <b> 7.Write a function that accepts parameter n and returns factorial of n</b><br><br>
+            </div>
+            <br>
+               <pre class="ans">  const answer=(n) => (n == 1 || n == 0) ? 1 : n * factorial(n - 1);
+
+                return n;
+             </pre>
+            <hr>
+         
+</body>
+</html>
