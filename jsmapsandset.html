@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+    background-color: black;
+    user-select: none;
+}
+b{
+    color:aqua;
+    
+}
+.h1{
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 50px;
+}
+.h2{
+    color:khaki;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 8px 8px 18px red,9px 12px 24px green, 8px 8px 18px red;
+
+}
+
+.q{
+   font-size: xx-large;
+   color:blue;
+}
+.ans{
+    
+    font-size: xx-large;
+    color: green;
+}
+    </style>
+</head>
+<body>
+    <div class="h1">JAVA SCRIPT</div>
+    <br><br>
+    <div class="h2">MAPS AND SETS</div>
+
+    <div class="q"> <b> 1.You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+        Your task is to remove all the duplicate occurrences of characters in the string.</b><br>
+        <span style="color:red;">Note:</span>Input:
+        abcadeecfb
+        
+        Output:
+        abcdef
+    
+       <pre class="ans"> 
+        var a = ["a","b","c","a","d","e","e","c","f","b"];
+        var b = new Set(a);
+        
+        console.log(b);
+       </pre>
+    <hr>
+
+    <div class="q"><b>2.You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)</b>
+        <br><span style="color:red;">Note:</span> <b>Input:</b> 
+        abcadeecfb
+        
+         Output:
+        a=2
+        b=2
+        c=2
+        d=1
+        e=2
+        f=1
+        <br>
+      <pre class="ans">
+        function countAlphabet(s)
+        {
+          var t = new Map();
+         
+          s.split('').forEach(element => {
+             
+                if(t.has(element))
+                {
+                    t.set(element, d.get(element)+1);
+                }
+                else
+                    t.set(element, 1);
+          });
+         
+          s.split('').forEach(element => {
+            if(t.has(element) && t.get(element)!=0)
+            {
+              console.log( element + "=" + t.get(element) + " ");
+              t.set(element, 0);
+            }
+          });
+        }
+        countAlphabet("abcadeecfb"); 
+      </pre>
+    <hr>
+    <div style="font-family:cursive;font-size:xx-large;"><span style="color:red;">Note: </span>IF YOU WANT TO CHECK THE ANSWER PLEASE VISIT CONSOLE</div>
+
+    <script type="text/javascript">
+       
+        var a = ["a","b","c","a","d","e","e","c","f","b"];
+        var b = new Set(a);
+        
+        console.log(b);
+
+
+
+        function countAlphabet(s)
+        {
+          var t = new Map();
+         
+          s.split("").forEach(element => {
+             
+                if(t.has(element))
+                {
+                    t.set(element, t.get(element)+1);
+                }
+                else
+                    t.set(element, 1);
+          });
+         
+          s.split("").forEach(element => {
+            if(t.has(element) && t.get(element)!=0)
+            {
+              console.log( element + "=" + t.get(element) + " ");
+              t.set(element,0);
+            }
+          });
+        }
+        countAlphabet( "abcadeecfb"); 
+    </script>
+</body>
+</html>
